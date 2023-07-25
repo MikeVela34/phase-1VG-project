@@ -7,24 +7,37 @@ const gameName = document.getElementById("game-name")
 const gameLikes = document.getElementById("display-likes")
 const gameDescription = document.getElementById("display-description")
 
-function renderGame() {
     fetch(gamesURL)
         .then(r => r.json())
         .then(games => {
             games.forEach(displayGames)
         })
+
+
+function renderDescription(gamesArray) {
+    for (let game in gamesArray) {
+        let h2 = document.createElement('h2')
+            h2.innerText = `${gamesArray[game]['name']}`
+            gameList.appendChild(h2)
+
+    }
+        renderDescription()
 }
 
-renderGame()
-
-
+        
 function displayGames(games) {
     const img = document.createElement("img")
     img.src = games.image
     gameList.appendChild(img)
-   
-    gameDetail.textContent = games.detail
-    gameName.textContent = games.name
-    gameDescription.textContent = games.description
-    gameLikes.textContent = games.likes
 }
+   
+
+
+
+
+
+
+    // gameDetail.textContent = games.detail
+    // gameName.textContent = games.name
+    // gameDescription.textContent = games.description
+    // gameLikes.textContent = games.likes
