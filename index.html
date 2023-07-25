@@ -11,33 +11,31 @@
     <header>
         <h1>FlatGames</h1>
     </header>
-    <div id="list-of-games">
+    <div class="list-of-games" id="list-of-games">
         <!--images of games-->
     </div>
 
-    <div id="game-detail">
+    <div class='game-detail'id="game-detail">
         <img class="game-image" id="game-image" alt="Insert game name">
         <h2 class="game-name" id="game-name">Game Name</h2>
     </div>
-    <!--<button>
-    <button id="like-button">👍</button>
-    <button id="dislike-button">👎</button>
-    </button>-->
-    <h3>Game Rating:</h3>
+    <h3 class="game-rating" id="game-rating">Game Rating:</h3>
     <p>
-        <span id="display-likes">insert likes</span>
+        <button class="like-button" id="like-button">👍</button>
+        <button class="dislike-button"  id="dislike-button">👎</button>
+        <span class="display-likes" id="display-likes">Insert Likes</span>
     </p>
-    <h3>Description</h3>
+    <h3 class="game-description" id="game-description">Description</h3>
     <p id="display-description">
         Insert Description Here
     </p>
 
     <!-- New Game Entries-->
-    <form id="new-game">
+    <form class="new-game" id="new-game">
         <h5>Add New Game</h5>
         <label for="name">Game Name</label>
         <input type="text" name="name" id="new-game-name" />
-        <label for="image">Image</label>
+        <label class="new-image" for="image">Image</label>
         <input type="text" name="image" id="new-game-image" />
         <label for="rating">Rating</label>
         <input type="number" name="rating" id="new-rating" />
@@ -50,7 +48,7 @@
 
     </div>
     <p>
-        <button id="add-game-btn">Add a new game</button>
+        <button class="add-game-btn"id="add-game-btn">Add a new game</button>
     </p>
     <div id="game-collection"></div>
 

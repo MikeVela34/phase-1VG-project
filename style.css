@@ -1,1 +1,94 @@
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: lightcyan;
+    background-image: url(https://t3.ftcdn.net/jpg/04/18/88/70/360_F_418887085_G10W0Da9hwhexnsedbYO7MC0q22brWOy.jpg);
 
+}
+header {
+    font-family: cursive;
+    font-size: 50px; 
+    justify-content: center;
+    display:flex;
+    color:white;
+    border-color: black;
+    border-width: 10px;
+}
+
+
+#new-game {
+    font-family:'Times New Roman', Times, serif;
+    font-size:14;
+    border: black 10px;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    display:flexbox;
+    position: relative;
+    justify-self: center;
+
+
+}
+#add-game-btn {
+    height: 40px;
+    width: 100px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#game-rating {
+    justify-content: center;
+    display: flex;
+
+}
+
+#game-name {
+    justify-content: center;
+    display: flex;
+}
+#game-image {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#game-description {
+    justify-content: center;
+    display: flex;
+}
+
+#display-likes {
+    justify-content: center;
+    display: flex;
+}
+
+#like-button {
+    justify-content: center;
+    display: flex;  
+}
+#dislike-button {
+    justify-content: center;
+    display: flex;
+}
+
+#new-image {
+    justify-self: center;
+    height:200px;
+    width:200px;
+}
+
+#list-of-games {
+    padding: 20rem;
+    width: 200px;
+    height: 200px;
+    opacity: .9;
+    justify-content: left;
+    display:flex;
+
+
+}
