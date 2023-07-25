@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family:'Times New Roman', Times, serif;
     background-color: lightcyan;
-    background-image: url(https://t3.ftcdn.net/jpg/04/18/88/70/360_F_418887085_G10W0Da9hwhexnsedbYO7MC0q22brWOy.jpg);
 
 }
 header {
@@ -10,7 +9,7 @@ header {
     font-size: 50px; 
     justify-content: center;
     display:flex;
-    color:white;
+    color:rgb(12, 12, 12);
     border-color: black;
     border-width: 10px;
 }
