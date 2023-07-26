@@ -26,7 +26,7 @@ function renderGameList(gameArray) {
         div.append(img)
         gameList.append(div)
         div.append(pTag)
-        img.addEventListener('event', () => {
+        pTag.addEventListener('event', () => {
             displayGame(gameArray, game)
 
         })
