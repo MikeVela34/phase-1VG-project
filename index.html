@@ -3,47 +3,48 @@
 
 <head>
     <title>FlatGames</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script defer type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
     <header>
         <h1>FlatGames</h1>
-    </header>
-    <div class="list-of-games" id="list-of-games">
-        
-    </div>
+        <div id="game-list">
 
-    <div class='game-detail'id="game-detail">
-        <img class="game-image" id="game-image" alt="Insert game name"></div>
-            <div class="text">
-                <div id="game-name"></div>
-                <div id="game-description"></div>
-                <div id="game-likes"></div>
-                <button id="btn">Like</button>
-                <button id="btn">Dislike</button>
-                <div id="description"></div>
-                <form id="create-comment">
-                    <label for="new-comment">Comment: </label>
-                    <textarea name="new-comment" id="new-comment"></textarea>
-                    <input type="submit" value="Submit New Comment"/>
-                </form>
         </div>
+    </header>
+    <div class="container">
+        <img id="game-images" src="" alt="Games">
     </div>
-    <h1>Add A New Game</h1>
+    <div class="text">
+        <div id="game-name"></div>
+        <div id="game-description"></div>
+        <div id="likes"></div>
+        <button id="like-btn">Like</button>
+        <div id="comment"></div>
+        <form id="create-comment">
+            <label for="new-comment">Comment</label>
+            <textarea name="new-comment" id="new-comment"></textarea>
+            <input type="submit" value="submit-new-comment" />
+
+        </form>
+    </div>
+    <h1>Add Your Own Game</h1>
     <span>
-        <form id="create-game">
-            <label for="gameName">Name</label>
-            <textarea name="Game Name" id="newGameName"></textarea>
-            <label for="gameImage">Image</label>
-            <textarea name="Game URL" id="newGameURL"></textarea>
-            <label for="gameRating">Rating</label>
-            <textarea name="Game Rating" id="gameRating"></textarea>
-            <label for="gameComment">Comment</label>
-            <textarea name="Game Comment" id="gameComment"></textarea>
-            <input type="submit" value="submitNewGame" />
+        <form id="add-game">
+            <label for="game-name">Game Name</label>
+            <textarea name="game-name" id="new-game-name"></textarea>
+            <label for="new-game-image">Game Url</label>
+            <textarea id="new-game-image"></textarea>
+            <label for="new-game-description">Game Description</label>
+            <textarea id="new-game-description"></textarea>
+            <!--<label for="new-game-comment"></label>
+            <textarea id="new-game-comment"></textarea>-->
+            <input type="submit" value="Submit-New-Game">
         </form>
     </span>
+
 </body>
+
 </html>

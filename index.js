@@ -1,44 +1,52 @@
+let currentGame;
 const url = 'http://localhost:3000/games'
-const listOfGames = document.getElementById('list-of-games')
-const gameImage = document.getElementById('game-image')
-const gameDetail = document.getElementById('game-detail')
+const gameList = document.getElementById('game-list')
+const gameImages = document.getElementById('game-images')
 const gameName = document.getElementById('game-name')
 const gameDescription = document.getElementById('game-description')
-const gameLikes = document.getElementById('game-likes')
-const commentForm = document.getElementById('create-comment')
-const newComment = document.getElementById('new-comment')
-const createGameForm = document.getElementById('create-game')
+const gameLikes = document.getElementById('likes')
+const likeButton = document.getElementById('like-btn')
+const dislikeButton = document.getElementById('dislike-btn')
 
-    fetch(url)
-        .then(r => r.json())
-        .then(gamesArray => {
-            displayGameDetails(gamesArray)
-            renderGames(gamesArray)
+fetch(url)
+    .then(r => r.json())
+    .then(gameArray => {
+        renderGameList(gameArray)
+        displayGame(gameArray, 0)
+
+    })
+
+function renderGameList(gameArray) {
+    for (let game in gameArray) {
+        const img = document.createElement('img')
+        const pTag = document.createElement('p')
+        const div = document.createElement('div')
+        pTag.innerText = gameArray[game]['name']
+        img.src = gameArray[game]['image']
+        div.append(img)
+        gameList.append(div)
+        div.append(pTag)
+        img.addEventListener('event', () => {
+            displayGame(gameArray, game)
+
         })
-
-function displayGameDetails(gamesArray) {
-    for(let game in gamesArray){
-        let h1 = document.createElement('h1')
-        let h2 = document.createElement('h2')
-        h1.innerText = `${gamesArray[game]['name']}`
-        h2.innerText = `${gamesArray[game]['description']}`
-        gameName.appendChild(h1)
-        gameDescription.appendChild(h2)
     }
-
-}
-function renderGames(gamesArray) {
-    const img = document.createElement('img')
-    img.src = gamesArray[games]['image']
-
 }
 
+function displayGame(gameArray, game) {
+    currentGame = game
+    gameImages.src = gameArray[game]['image']
+    gameName.innerText = `Game Name: ${gameArray[game]['name']}`
+    gameDescription.innerText = `Description: ${gameArray[game]['description']}`
+    gameLikes.innerText = `Likes: ${gameArray[game]['likes']}`
 
+}
 
+function addLikes() {
+    likeButton.addEventListener('click', () => {
+        currentGame.gameLikes +=
+            gameLikes.innerText = `Likes: ${currentGame.likes}`
+    })
+    console.log('i am being clicked')
+}
 
-
-
-    // gameDetail.textContent = games.detail
-    // gameName.textContent = games.name
-    // gameDescription.textContent = games.description
-    // gameLikes.textContent = games.likes
