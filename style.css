@@ -63,16 +63,16 @@ h1 {
 }
 
 h1 {
-    background-color: #caf3ff;
+    background-color: white;
 }
 
 div {
-    background-image: linear-gradient(180deg, green, #FFCB32, #B6D084, #F8FFCA);
+    background-image: linear-gradient(360deg, grey, silver, white);
 }
 
-p {
+/* p {
     background-image: rgb(94, 250, 94);
-}
+} */
 
 
 
