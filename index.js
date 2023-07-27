@@ -1,4 +1,5 @@
 let currentGame;
+
 const url = 'http://localhost:3000/games'
 const gameList = document.getElementById('game-list')
 const gameImages = document.getElementById('game-images')
@@ -7,13 +8,15 @@ const gameDescription = document.getElementById('game-description')
 const gameLikes = document.getElementById('likes')
 const likeButton = document.getElementById('like-btn')
 const dislikeButton = document.getElementById('dislike-btn')
+const addGameForm = document.getElementById("add-game")
+
 
 fetch(url)
     .then(r => r.json())
     .then(gameArray => {
         renderGameList(gameArray)
         displayGame(gameArray, 0)
-
+        newGameForm()
     })
 
 function renderGameList(gameArray) {
@@ -26,10 +29,16 @@ function renderGameList(gameArray) {
         div.append(img)
         gameList.append(div)
         div.append(pTag)
-        img.onclick = () => {
-            displayGame(gameArray, game)
 
+        img.onclick = () => {
+
+            displayGame(gameArray, game)
         }
+        img.
+
+ hopefully-that-works
+        }
+
     }
 }
 
@@ -49,20 +58,21 @@ function addLikes() {
     })
     console.log('i am being clicked')
 }
-const createComment = document.getElementById("create-comment")
-const commentPlace = document.getElementById('comment')
-function addComment() {
-    createComment.addEventListener('submit', () => {
-        e.preventDefault()
-        const newComment = document.getElementById("new-comment").value
-        commentPlace.innerText = newComment
 
-    })
+function newGameForm() {
+    addGameForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+        const newGameName = document.getElementById("new-game-name").value
+        const newGameImage = document.getElementById("new-game-image").value
+        const newGameDescription = document.getElementById("new-game-description").value
+            const newGameForm = {
+                name: newGameName,
+                image: newGameImage,
+                description: newGameDescription
+            }
+        gameList(newGameForm)
+    });
 }
 
-
-
-
-
-
-
+//     }
+// }

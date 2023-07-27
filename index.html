@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css"/>
+        <script defer type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>FlatGames</h1>
+        </header>
+        <div id="list-of-games">
+            <!--images of games-->
+        </div>
+
+
+
 <head>
     <title>FlatGames</title>
     <link rel="stylesheet" href="style.css">
@@ -29,10 +44,26 @@
         <!-- <textarea name="new-comment" id="new-comment"></textarea> -->
         <!-- <input type="submit" value="submit-new-comment" /> -->
 
-        <!-- </form> -->
+
+    <div class='game-detail'id="game-detail">
+        <img class="game-image" id="game-image" alt="Insert game name"></div>
+            <div class="text">
+                <div id="game-name"></div>
+                <div id="game-description"></div>
+                <div id="game-likes"></div>
+                <button id="btn">Like</button>
+                <button id="btn">Dislike</button>
+                <div id="description"></div>
+                <form id="createComment">
+                    <label for="new-comment">Comment: </label>
+                    <textarea name="new-comment" id="new-comment"></textarea>
+                    <input type="submit" value="Submit New Comment"/>
+                </form>
+        </div>
     </div>
-    <h1>Add Your Own Game</h1>
+    <h1>Add A New Game</h1>
     <span>
+
         <form id="add-game">
             <label for="game-name">Game Name</label>
             <textarea name="game-name" id="new-game-name"></textarea>
@@ -41,12 +72,11 @@
             <label for="new-game-description">Game Description</label>
             <textarea id="new-game-description"></textarea>
             <!--<label for="new-game-comment"></label>
-                <textarea id="new-game-comment"></textarea>-->
-            <input type="submit" value="Submit-New-Game">
+            <textarea id="new-game-comment"></textarea>-->
+            <input type="submit" value="Submit-New-Name">
+
         </form>
     </span>
-    <div id="game-list">
-    </div>
-</body>
 
+</body>
 </html>
