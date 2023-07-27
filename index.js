@@ -1,4 +1,5 @@
 let currentGame;
+
 const url = 'http://localhost:3000/games'
 const gameList = document.getElementById('game-list')
 const gameImages = document.getElementById('game-images')
@@ -26,10 +27,15 @@ function renderGameList(gameArray) {
         div.append(img)
         gameList.append(div)
         div.append(pTag)
-        pTag.addEventListener('event', () => {
-            displayGame(gameArray, game)
 
-        })
+
+        img.onclick = () => {
+
+   
+            displayGame(gameArray, game)
+        }
+        img.
+
     }
 }
 
@@ -49,20 +55,21 @@ function addLikes() {
     })
     console.log('i am being clicked')
 }
-const createComment = document.getElementById("create-comment")
-const commentPlace = document.getElementById('comment')
-function addComment() {
-    createComment.addEventListener('submit', () => {
-        e.preventDefault()
-        const newComment = document.getElementById("new-comment").value
-        commentPlace.innerText = newComment
-
-    })
-}
 
 
 
 
+// const gamesUrl = "http://localhost:3000/games"
 
+// fetch(gamesUrl)
+//     .then(response => response.json())
+//     .then(gameArray =>
+//         displayGames(gameArray))
 
+// function displayGames(gameArray) {
+//     for (let game in gameArray) {
+//         const gameImage = document.getElementById("game-images")
+//         const
 
+//     }
+// }
