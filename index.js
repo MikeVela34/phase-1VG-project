@@ -26,10 +26,10 @@ function renderGameList(gameArray) {
         div.append(img)
         gameList.append(div)
         div.append(pTag)
-        img.addEventListener('event', () => {
+        img.onclick = () => {
             displayGame(gameArray, game)
 
-        })
+        }
     }
 }
 
