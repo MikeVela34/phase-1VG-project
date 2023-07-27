@@ -41,8 +41,18 @@ body {
 
 
 h1 {
-    color: cornflowerblue;
+
+    background-color: white;
 }
+
+div {
+    background-image: linear-gradient(360deg, grey, silver, white);
+}
+
+/* p {
+    background-image: rgb(94, 250, 94);
+} */
+
 
 header {
     font-family: cursive;

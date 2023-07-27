@@ -8,13 +8,15 @@ const gameDescription = document.getElementById('game-description')
 const gameLikes = document.getElementById('likes')
 const likeButton = document.getElementById('like-btn')
 const dislikeButton = document.getElementById('dislike-btn')
+const addGameForm = document.getElementById("add-game")
+
 
 fetch(url)
     .then(r => r.json())
     .then(gameArray => {
         renderGameList(gameArray)
         displayGame(gameArray, 0)
-
+        newGameForm()
     })
 
 function renderGameList(gameArray) {
@@ -56,20 +58,20 @@ function addLikes() {
     console.log('i am being clicked')
 }
 
-
-
-
-// const gamesUrl = "http://localhost:3000/games"
-
-// fetch(gamesUrl)
-//     .then(response => response.json())
-//     .then(gameArray =>
-//         displayGames(gameArray))
-
-// function displayGames(gameArray) {
-//     for (let game in gameArray) {
-//         const gameImage = document.getElementById("game-images")
-//         const
+function newGameForm() {
+    addGameForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+        const newGameName = document.getElementById("new-game-name").value
+        const newGameImage = document.getElementById("new-game-image").value
+        const newGameDescription = document.getElementById("new-game-description").value
+            const newGameForm = {
+                name: newGameName,
+                image: newGameImage,
+                description: newGameDescription
+            }
+        gameList(newGameForm)
+    });
+}
 
 //     }
 // }
