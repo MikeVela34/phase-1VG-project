@@ -30,52 +30,46 @@ h1 {
 }
 
 body {
-
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: lightcyan;
-
-
     color: rgb(25, 22, 22);
 }
 
+h1 {
+    color: cornflowerblue;
+}
+
+.container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    justify-content: space-evenly;
+}
+
+.container #game-images {
+    width: 1125px;
+    height: 690px;
+}
+
+#game-images img {
+    margin: 5px;
+}
+
+.text {
+    display: flex;
+    font-size: 30px;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
 
 h1 {
-
-    background-color: white;
+    background-color: #caf3ff;
 }
 
 div {
-    background-image: linear-gradient(360deg, grey, silver, white);
+    background-image: linear-gradient(180deg, green, #FFCB32, #B6D084, #F8FFCA);
 }
 
-/* p {
+p {
     background-image: rgb(94, 250, 94);
-} */
-
-
-header {
-    font-family: cursive;
-    font-size: 50px;
-    justify-content: center;
-    display: flex;
-    color: black;
-    border-color: black;
-    border-width: 10px;
 }
-
-.game-image {
-
-    display: flex;
-    justify-content: center;
-
-}
-
-.add-game {
-    display: flex;
-    justify-content: center;
-
-}
-
-} */
-
