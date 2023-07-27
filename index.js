@@ -322,14 +322,15 @@ function renderGameList(gameArray) {
         gameList.append(div)
         div.append(pTag)
 
-
         img.onclick = () => {
+
 
 
             displayGame(gameArray, game)
         }
         img.
  }
+
 }
 
 function displayGame(gameArray, game) {
