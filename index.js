@@ -1,4 +1,5 @@
 let currentGame;
+
 const url = 'http://localhost:3000/games'
 const gameList = document.getElementById('game-list')
 const gameImages = document.getElementById('game-images')
@@ -8,6 +9,7 @@ const gameLikes = document.getElementById('likes')
 const likeButton = document.getElementById('like-btn')
 const dislikeButton = document.getElementById('dislike-btn')
 const addGameForm = document.getElementById("add-game")
+
 
 fetch(url)
     .then(r => r.json())
@@ -27,10 +29,15 @@ function renderGameList(gameArray) {
         div.append(img)
         gameList.append(div)
         div.append(pTag)
-        img.addEventListener('event', () => {
-            displayGame(gameArray, game)
 
-        })
+
+        img.onclick = () => {
+
+   
+            displayGame(gameArray, game)
+        }
+        img.
+
     }
 }
 
@@ -66,3 +73,5 @@ function newGameForm() {
     });
 }
 
+//     }
+// }
