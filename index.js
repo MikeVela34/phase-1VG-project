@@ -49,4 +49,20 @@ function addLikes() {
     })
     console.log('i am being clicked')
 }
+const createComment = document.getElementById("create-comment")
+const commentPlace = document.getElementById('comment')
+function addComment() {
+    createComment.addEventListener('submit', () => {
+        e.preventDefault()
+        const newComment = document.getElementById("new-comment").value
+        commentPlace.innerText = newComment
+
+    })
+}
+
+
+
+
+
+
 
