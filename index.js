@@ -28,7 +28,10 @@ function renderGameList(gameArray) {
         gameList.append(div)
         div.append(pTag)
 
+
         img.onclick = () => {
+
+   
             displayGame(gameArray, game)
         }
         img.
@@ -52,6 +55,7 @@ function addLikes() {
     })
     console.log('i am being clicked')
 }
+
 
 
 
