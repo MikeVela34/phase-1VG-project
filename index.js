@@ -1,30 +1,68 @@
-const homeURL = "http://localhost:3000"
-const gamesURL = homeURL + "/games"
-const gameList = document.getElementById("list-of-games")
-const gameDetail = document.getElementById("game-detail")
-//const gameImage = document.getElementById("game-image")
-const gameName = document.getElementById("game-name")
-const gameLikes = document.getElementById("display-likes")
-const gameDescription = document.getElementById("display-description")
+let currentGame;
+const url = 'http://localhost:3000/games'
+const gameList = document.getElementById('game-list')
+const gameImages = document.getElementById('game-images')
+const gameName = document.getElementById('game-name')
+const gameDescription = document.getElementById('game-description')
+const gameLikes = document.getElementById('likes')
+const likeButton = document.getElementById('like-btn')
+const dislikeButton = document.getElementById('dislike-btn')
 
-function renderGame() {
-    fetch(gamesURL)
-        .then(r => r.json())
-        .then(games => {
-            games.forEach(displayGames)
+fetch(url)
+    .then(r => r.json())
+    .then(gameArray => {
+        renderGameList(gameArray)
+        displayGame(gameArray, 0)
+
+    })
+
+function renderGameList(gameArray) {
+    for (let game in gameArray) {
+        const img = document.createElement('img')
+        const pTag = document.createElement('p')
+        const div = document.createElement('div')
+        pTag.innerText = gameArray[game]['name']
+        img.src = gameArray[game]['image']
+        div.append(img)
+        gameList.append(div)
+        div.append(pTag)
+        img.addEventListener('event', () => {
+            displayGame(gameArray, game)
+
         })
+    }
 }
 
-renderGame()
+function displayGame(gameArray, game) {
+    currentGame = game
+    gameImages.src = gameArray[game]['image']
+    gameName.innerText = `Game Name: ${gameArray[game]['name']}`
+    gameDescription.innerText = `Description: ${gameArray[game]['description']}`
+    gameLikes.innerText = `Likes: ${gameArray[game]['likes']}`
 
-
-function displayGames(games) {
-    const img = document.createElement("img")
-    img.src = games.image
-    gameList.appendChild(img)
-   
-    gameDetail.textContent = games.detail
-    gameName.textContent = games.name
-    gameDescription.textContent = games.description
-    gameLikes.textContent = games.likes
 }
+
+function addLikes() {
+    likeButton.addEventListener('click', () => {
+        currentGame.gameLikes +=
+            gameLikes.innerText = `Likes: ${currentGame.likes}`
+    })
+    console.log('i am being clicked')
+}
+const createComment = document.getElementById("create-comment")
+const commentPlace = document.getElementById('comment')
+function addComment() {
+    createComment.addEventListener('submit', () => {
+        e.preventDefault()
+        const newComment = document.getElementById("new-comment").value
+        commentPlace.innerText = newComment
+
+    })
+}
+
+
+
+
+
+
+
