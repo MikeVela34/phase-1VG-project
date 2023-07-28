@@ -1,46 +1,60 @@
 {
-    "games": [
-        {
-            "id": 1,
-            "name": "Call of Duty: Black Ops",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQKNpZ8pt490pOPK_v0hD3v8Q01wMtJHncA&usqp=CAU",
-            "likes": 9,
-            "description": "One of the best first person zombie shooters of all time!"
-        },
-        {
-            "id": 2,
-            "name": "Minecraft",
-            "image": "https://upload.wikimedia.org/wikinews/en/7/7a/Minecraft_game_cover.jpeg",
-            "likes": 10,
-            "description": "Minecraft is there when the depression hits"
-        },
-        {
-            "id": 3,
-            "name": "Hogwarts",
-            "image": "https://images.ctfassets.net/usf1vwtuqyxm/4RawEJQJvPyzpu3y51Sova/3576a7fdb536ffe175c41a6cc6561d8e/hogwarts-legacy-main-hero-app-article-hero.jpg",
-            "likes": 1,
-            "description": "Stole my money and crashed my PC :/"
-        },
-        {
-            "id": 4,
-            "name": "Destiny 2",
-            "image": "https://upload.wikimedia.org/wikipedia/en/0/05/Destiny_2_%28artwork%29.jpg",
-            "likes": 7,
-            "description": "NERF THE SMG"
-        },
-        {
-            "id": 5,
-            "name": "NBA 2k14",
-            "image": "https://e.snmc.io/lk/f/x/3a8ac94135e94f893da827851855c3a8/8597653",
-            "likes": 9,
-            "description": "San Antonio sent Lebron back to Cleveland"
-        },
-        {
-            "id": 6,
-            "name": "FIFA 16",
-            "image": "https://cdn.mobygames.com/covers/1181317-fifa-16-playstation-4-front-cover.jpg",
-            "likes": 8,
-            "description": "And 7 years later, still reigns over the soccer world"
-        }
-    ]
+  "games": [
+    {
+      "id": 1,
+      "name": "Call of Duty: Black Ops",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQKNpZ8pt490pOPK_v0hD3v8Q01wMtJHncA&usqp=CAU",
+      "rating": 9,
+      "description": "One of the best first person zombie shooters of all time!"
+    },
+    {
+      "id": 2,
+      "name": "Minecraft",
+      "image": "https://upload.wikimedia.org/wikinews/en/7/7a/Minecraft_game_cover.jpeg",
+      "rating": 10,
+      "description": "Minecraft is there when the depression hits"
+    },
+    {
+      "id": 3,
+      "name": "Hogwarts",
+      "image": "https://images.ctfassets.net/usf1vwtuqyxm/4RawEJQJvPyzpu3y51Sova/3576a7fdb536ffe175c41a6cc6561d8e/hogwarts-legacy-main-hero-app-article-hero.jpg",
+      "rating": 1,
+      "description": "Stole my money and crashed my PC :/"
+    },
+    {
+      "id": 4,
+      "name": "Destiny 2",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/05/Destiny_2_%28artwork%29.jpg",
+      "rating": 7,
+      "description": "NERF THE SMG"
+    },
+    {
+      "id": 5,
+      "name": "NBA 2k14",
+      "image": "https://e.snmc.io/lk/f/x/3a8ac94135e94f893da827851855c3a8/8597653",
+      "rating": 9,
+      "description": "San Antonio sent Lebron back to Cleveland"
+    },
+    {
+      "id": 6,
+      "name": "FIFA 16",
+      "image": "https://cdn.mobygames.com/covers/1181317-fifa-16-playstation-4-front-cover.jpg",
+      "rating": 8,
+      "description": "And 7 years later, still reigns over the soccer world"
+    },
+    {
+      "name": "OverWatch 2",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdqWcTjpO91iZEvFDTalRDgC48EgcPNOtpkw&usqp=CAU",
+      "description": "They ruined this game. Overwatch 1 was better. Also whats the deal with no PVE. Y'all are liaers.",
+      "rating": 0,
+      "id": 9
+    },
+    {
+      "name": "God of War 3",
+      "image": "https://i.ytimg.com/vi/R5Eam3LwgZo/maxresdefault.jpg",
+      "description": "Good Game",
+      "rating": "7",
+      "id": 13
+    }
+  ]
 }
