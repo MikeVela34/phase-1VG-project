@@ -15,7 +15,7 @@ fetch(url)
     })
 
 function renderGameList(gameArray) {
-    gameArray.forEach((gameData, index) => {
+    gameArray.forEach((gameData, gameIndex) => {
         const img = document.createElement('img')
         const pTag = document.createElement('p')
         const div = document.createElement('div')
@@ -27,17 +27,17 @@ function renderGameList(gameArray) {
         div.append(pTag)
 
         img.onclick = () => {
-            displayGame(gameArray, index)
+            displayGame(gameArray, gameIndex)
         }
     })
 }
 
-function displayGame(gameArray, index) {
-    currentGame = index;
-    gameImages.src = gameArray[index]['image']
-    gameName.innerText = `Game Name: ${gameArray[index]['name']}`
-    gameDescription.innerText = `Description: ${gameArray[index]['description']}`
-    gameRating.innerText = `Rating: ${gameArray[index]['rating']}`
+function displayGame(gameArray, gameIndex) {
+    currentGame = gameIndex;
+    gameImages.src = gameArray[gameIndex]['image']
+    gameName.innerText = `Game Name: ${gameArray[gameIndex]['name']}`
+    gameDescription.innerText = `Description: ${gameArray[gameIndex]['description']}`
+    gameRating.innerText = `Rating: ${gameArray[gameIndex]['rating']}`
 }
 
 addGameForm.addEventListener('submit', (e) => {
@@ -60,15 +60,17 @@ addGameForm.addEventListener('submit', (e) => {
             rating: newGameRating
         })
     })
-        .then(response => response.json())
+        .then(r => r.json())
         .then(newGame => {
             document.getElementById('new-game-name').value = ''
             document.getElementById('new-game-image').value = ''
             document.getElementById('new-game-description').value = ''
             document.getElementById('new-game-rating').value = ''
+
             const img = document.createElement('img')
             const pTag = document.createElement('p')
             const div = document.createElement('div')
+
             pTag.innerText = newGame.name
             img.src = newGame.image
             div.append(img)

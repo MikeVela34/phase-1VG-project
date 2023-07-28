@@ -20,4 +20,4 @@ Flatgames
 
  2. User will have the ability to like the comments.
 
- 3. Comments will be listed in the oder of how many likes that it has. It would be similar to the upvoting system that reddit has implimented.
+ 3. Comments will be listed in the order of how many likes that it has. It would be similar to the upvoting system that reddit has implimented.
