@@ -1,23 +1,30 @@
+Read ME
+
+
 Flatgames
 
-    brought to you by Nial Johnson, Farhan Hossain, and Michael Vela
 
- This design that we are building is a hub for the gaming community or anyone who is interested with being apart of the gaming world! 
- This hub will consist of different games that users play with their thoughts on it as well. If there is a game that you have played, you have to option to share your thought on it as well with the comment feature. If by chance you don't see a game that you play then you will have the option to post a game and share with the world!
+brought to you by Nial Johnson, Farhan Hossain, and Michael Vela
 
 
- Deliverables
- 1. Having a listings of games that include information such as genre, title, developers, along with a review from the person that uploads it. (Rating out of 10 stars)
+This design that we are building is a hub for the gaming community or anyone who is interested in being a part of the gaming world!
+This hub will consist of different games that users play with their personalized description on it as well. When uploading we have the chance to give it a rating as well. If by chance you don't see a game that you play then you will have the option to post a game and share with the world!
 
- 1a. Users that upload will be prompted to put in their username as their gamertag along with the platform that they play on.
 
- 2. Users will be able to comment on existing posts and add a like to their favorite games.
 
- 3. Users will be able to add another game that saves to the database, using the information in the form.
 
- EXTRA DELIVERABLES
- 1. Being able to filter through the games based on the genes of games.
+Deliverables
+1. Having a list of games that include information such as genre, title, developers, along with a description from the person that uploads it. (Giving it a rating as well)
 
- 2. User will have the ability to like the comments.
 
- 3. Comments will be listed in the order of how many likes that it has. It would be similar to the upvoting system that reddit has implimented.
+2. Users will be able to click on games that are in the list and have it display where it shows at the top.
+
+
+3. Users will be able to add another game that saves to the database, using the information in the form.
+
+
+EXTRA DELIVERABLES
+1. Being able to filter through the games based on the genes of games.
+
+
+3. Giving people the space to add their username and platform that they play on(making it more interactive)
